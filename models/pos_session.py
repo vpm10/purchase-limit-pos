@@ -8,5 +8,6 @@ class AddCustomer(models.Model):
         result = super()._loader_params_res_partner()
 
         result['search_params']['fields'].append('set_limit')
+        result['search_params']['fields'].append('purchase_limit')
         # print(result)
         return result
